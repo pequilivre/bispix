@@ -1,12 +1,32 @@
 {
-  "private": true,
+  "name": "bispix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "prod": "gulp --production",
-    "dev": "gulp watch"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pequilivre/bispix.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/pequilivre/bispix/issues"
+  },
+  "homepage": "https://github.com/pequilivre/bispix#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "csrf": "^3.1.0",
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.2",
+    "express-session": "^1.18.2"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "laravel-elixir": "^5.0.0",
-    "bootstrap-sass": "^3.0.0"
+    "nodemon": "^3.1.10"
   }
 }
