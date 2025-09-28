@@ -16,6 +16,9 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const tokens = new Tokens();
 
+// Servir arquivos estáticos (CSS, JS, imagens)
+app.use(express.static(path.join(__dirname, 'public')));
+
 // Middlewares básicos
 app.use(cookieParser());
 app.use(session({
