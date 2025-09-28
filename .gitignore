@@ -1,5 +1,7 @@
-/vendor
 /node_modules
+package-lock.json
+
+/vendor
 /public/storage
 Homestead.yaml
 Homestead.json
